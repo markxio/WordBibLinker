@@ -36,7 +36,7 @@ class Translator:
 
     def init_word(self, file_path: str):
         self.bib_word_str = Translator.read_file(file_path)
-        self.generate_word_map(self.bib_word_str)    
+        self.generate_word_map()    
 
     def read_bibtex(self, file_path: str):
         self.bibdata = parse_file(file_path)
@@ -89,7 +89,7 @@ class Translator:
         with open(file_path, 'w') as content_file:
             content_file.write(content)
 
-    def generate_word_map(self, bibliography: str):
+    def generate_word_map(self):
         # better safe than sorry, remove any whitespace
         no_whitespace = Translator.remove_whitespace(self.bib_word_str)
 
