@@ -1,0 +1,2 @@
+[1] S. Sung, “Extending High-Level Tooling for Task-Parallel Somethings” in 29th IEEE on Something proceedings, 2021.
+[2] C. Mueller, “This could be your paper title”, 2023.
