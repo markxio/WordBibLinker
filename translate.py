@@ -73,8 +73,6 @@ class Translator:
     def find_bibtex_entry(self, title_clean: str) -> str:    
         #loop through the individual references
         for bib_id in self.bibdata.entries:
-            b = self.bibdata.entries[bib_id].fields
-            
             if title_clean == self.bibdata_clean[bib_id]["title"]: 
                 return bib_id
         
